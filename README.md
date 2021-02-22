@@ -1,62 +1,25 @@
-EXERCICE 1 (4 points) 
+# Sujet 14
 
- 
- 
- 
-Écrire une fonction recherche qui prend en paramètres elt un nombre et tab un 
-tableau de nombres, et qui renvoie le tableau des indices de elt dans tab si elt est 
-dans tab et le tableau vide [] sinon. 
+Ce sujet comporte deux exercices : voir le PDF ci-joint
 
-Exemples : 
+Pour le premier exercice, vous devez écrire une fonction `recherche` 
 
->>> recherche(3, [3, 2, 1, 3, 2, 1]) 
-[0, 3] 
->>> recherche(4, [1, 2, 3]) 
-[] 
 
-EXERCICE 2 (4 points) 
+Pour le deuxième, il s'agit de compléter le code fourni.
 
-Un  professeur  de  NSI  décide  de  gérer  les  résultats  de  sa  classe  sous  la  forme  d’un 
-dictionnaire :  
+- Les fichiers à compléter sont dans le dossier `exercices`.
 
-les clefs sont les noms des élèves ; 
-les valeurs sont des dictionnaires dont les clefs sont les types d’épreuves et les 
-valeurs sont les notes obtenues associées à leurs coefficients. 
+- Le dossier `tests` correspond aux tests fournis par l'énoncé.
+Il ne faut surtout pas modifier ces fichiers sous peine d'annulation de l'épreuve.
 
-Avec : 
+- Si vous travaillez avec repl.it, modifier le fichier .replit :  
+<pre><code style="background-color:black;color:white;width:100%;font-size: large;">
+# Si vous voulez exécuter l'exercice 1 : Enlever le # de la ligne ci-dessous
+# run = "python3 exercices/exercice1.py"
 
-resultats = {'Dupont':{'DS1' : [15.5, 4], 
-                       'DM1' : [14.5, 1], 
-                       'DS2' : [13, 4], 
-                       'PROJET1' : [16, 3], 
-                       'DS3' : [14, 4]}, 
-             'Durand':{'DS1' : [6 , 4], 
-                       'DM1' : [14.5, 1], 
-                       'DS2' : [8, 4], 
-                       'PROJET1' : [9, 3], 
-                       'IE1' : [7, 2], 
-                       'DS3' : [8, 4], 
-                       'DS4' :[15, 4]}} 
- 
-L’élève dont le nom est Durand a ainsi obtenu au DS2 la note de 8 avec un coefficient 4. 
- 
-Le professeur crée une fonction moyenne qui prend en paramètre le nom d’un de ces 
-élèves et lui renvoie sa moyenne arrondie au dixième.  
+# Si vous voulez exécuter l'exercice 2 : Enlever le # de la ligne ci-dessous
+# run = "python3 exercices/exercice2.py"
 
-Compléter le code du professeur ci-dessous : 
+language = "python3"
+</code></pre>
 
- 
-
-def moyenne(nom): 
-    if nom in ...: 
-        notes = resultats[nom] 
-        total_points = ... 
-        total_coefficients = ... 
-        for ...  in notes.values(): 
-            note , coefficient = valeurs 
-            total_points = total_points + ... * coefficient 
-            total_coefficients = ... + coefficient 
-        return round( ... / total_coefficients , 1 ) 
-    else: 
-        return -1 
- 
